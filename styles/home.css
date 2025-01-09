@@ -74,7 +74,7 @@
    display: flex;
    overflow: hidden;
    background: linear-gradient(to right, #10158b, #198af6 80%);   
-   padding: 5px 0;
+   padding: 4px 0;
    position: relative;
    border-radius: 5px;
    width: 100%;
@@ -229,7 +229,7 @@
          
    }
    .carrossel-item {
-      min-width: 50%;      
+      min-width: 30%;      
       box-sizing: border-box;
       padding: 5px;
    }
@@ -240,7 +240,7 @@
 
    #whatsapp-button {
       position: fixed;
-      bottom: 70px;
+      bottom: 15px;
       right: 20px;
       z-index: 1002;
       width: 60px;
@@ -263,9 +263,16 @@
    
 }
 
-/* @media (min-width: 768px) {
-   .carrossel-item {
-      min-width: 0%;
+@media (min-width: 768px) and (max-width: 1000px) {
+   #home {
+      height: 100vh;      
+      margin: 0 40px;
    }
-} */
+   .carrossel-item {
+      min-width: 20%;
+   }
+   .banner-mobile-media {
+      display: block;
+   }
+}
 
