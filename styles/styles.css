@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('services.css');
+@import url('about.css');
+@import url('contact.css');
+@import url('footer.css');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+   text-decoration: none;
+   scroll-behavior: smooth;
+   list-style: none;
+
+   
+}
+
+html {
+   scroll-behavior: smooth;
+   scroll-padding-top: 120px;
+}
+
+main {
+   width: 100%;
+   padding-top: 120px;
+}
+/* 
+@media screen and (max-width: 450px) {
+   main {
+      padding-top: 95px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   main {
+      padding-top: 90px;
+   }
+} */
