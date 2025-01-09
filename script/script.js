@@ -217,10 +217,8 @@ ScrollReveal().reveal('.contacts-links', {
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
 ScrollReveal().reveal('#footer', {
-    origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
-    distance: '100px',   // Distância percorrida pelo elemento
-    duration: 1500,     // Duração da animação em milissegundos
-    delay: 900,         // Atraso antes de começar a animação
+    duration: 1000,     // Duração da animação em milissegundos
+    delay: 500,         // Atraso antes de começar a animação
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
 
