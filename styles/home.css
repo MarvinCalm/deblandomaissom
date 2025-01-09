@@ -206,7 +206,7 @@
  
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
    #home {
       height: 100vh;      
       margin: 0 20px;
@@ -224,10 +224,12 @@
       display: block;
    }
    .carrossel {
-      align-items: center;      
+      align-items: center;
+      
+         
    }
    .carrossel-item {
-      min-width: 100%; 
+      min-width: 50%;      
       box-sizing: border-box;
       padding: 5px;
    }
@@ -238,7 +240,7 @@
 
    #whatsapp-button {
       position: fixed;
-      bottom: 90px;
+      bottom: 70px;
       right: 20px;
       z-index: 1002;
       width: 60px;
@@ -261,8 +263,9 @@
    
 }
 
-@media (max-width: 768px) {
+/* @media (min-width: 768px) {
    .carrossel-item {
-      min-width: 50%; /* 2 itens visíveis */
+      min-width: 0%;
    }
-}
+} */
+
