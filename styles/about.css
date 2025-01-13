@@ -30,16 +30,16 @@
 @media (max-width: 450px) {
     #about {
         height: 100vh;      
-        margin: 40px 20px;      
+        margin: 40px 10px;      
     }
     
     .about-text {
-        font-size: 11px;
-        margin: 11px 5px 0 5px;
+        font-size: 10px;
+        margin: 8px 4px 0 4px;
         padding: 0;
     }
     .about-text p {
-        margin: 0 0 4px 0;
+        margin: 0 0 2px 0;
     }
 
     .banner-about img {

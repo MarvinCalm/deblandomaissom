@@ -172,6 +172,7 @@
    
 }
 
+
 @keyframes move {
    0% {
       transform: scale(1);
@@ -203,13 +204,10 @@
    cursor: pointer;
 }
 
- 
-
-
 @media screen and (max-width: 480px) {
    #home {
       height: 100vh;      
-      margin: 0 20px;
+      margin: 0 25px;
    }
    .carousel-banner-control {
       display: none;
@@ -225,8 +223,6 @@
    }
    .carrossel {
       align-items: center;
-      
-         
    }
    .carrossel-item {
       min-width: 100%;      
@@ -255,7 +251,7 @@
       height: 80%;
    }
    .close {
-      top: 55px;
+      top: 0;
       right: 30px;
       font-size: 95px;
       color: rgb(255, 255, 255);
@@ -266,16 +262,19 @@
    
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 481px) and (max-width: 1520px) {
    #home {
       height: 100vh;      
-      margin: 0 40px;
+      margin: 0 20px;
    }
    .carrossel-item {
-      min-width: 20%;
+      min-width: 100%;
    }
    .banner-mobile-media {
       display: block;
+   }
+   .carrossel-inner {
+      width: 30%;
    }
 }
 

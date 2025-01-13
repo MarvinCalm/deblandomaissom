@@ -36,6 +36,13 @@
     gap: 55px;
     margin: 10px 0;    
 }
+.contacts-links a {
+    text-decoration: none;
+    color: #10158b;
+}
+.contacts-links a:hover {    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 .phone, .whatsapp, .instagram {
     font-size: 2rem;
     color: #10158b;
@@ -109,8 +116,8 @@
 
 @media (max-width: 450px) {
     #contact {
-        height: 85vh;      
-        margin: 0 20px;      
+        height: 100vh;      
+        margin: 0 10px;      
     }
     .contacts-links {
         gap: 6px;
