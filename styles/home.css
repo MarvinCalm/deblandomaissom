@@ -82,11 +82,11 @@
 .carrossel-inner {
    display: flex;
    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
-   width: 100%;
+   width: 20%;
 }
 
 .carrossel-item {
-   min-width: 20%; /* Exibe 5 itens por vez; ajuste conforme necessário */
+   min-width: 100%; 
    box-sizing: border-box;
    padding: 5px;
 }
@@ -229,9 +229,12 @@
          
    }
    .carrossel-item {
-      min-width: 30%;      
+      min-width: 100%;      
       box-sizing: border-box;
       padding: 5px;
+   }
+   .carrossel-inner {
+      width: 40%;
    }
 
    .carousel-banner-item {
@@ -240,7 +243,7 @@
 
    #whatsapp-button {
       position: fixed;
-      bottom: 15px;
+      bottom: 40px;
       right: 20px;
       z-index: 1002;
       width: 60px;
@@ -252,9 +255,9 @@
       height: 80%;
    }
    .close {
-      top: 110px;
-      right: 40px;
-      font-size: 80px;
+      top: 55px;
+      right: 30px;
+      font-size: 95px;
       color: rgb(255, 255, 255);
       cursor: pointer;
    }

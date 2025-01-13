@@ -62,7 +62,7 @@
 
 @media (max-width: 450px) {
     #services {
-        height: 85vh;      
+        height: 95vh;      
         margin: 40px 20px;
         display: flex;      
     }

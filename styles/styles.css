@@ -29,15 +29,13 @@ main {
    width: 100%;
    padding-top: 120px;
 }
-/* 
-@media screen and (max-width: 450px) {
+
+
+@media (max-width: 450px) {
+   html {
+      scroll-padding-top: 100px;
+   }
    main {
-      padding-top: 95px;
+      padding-top: 100px;
    }
 }
-
-@media screen and (max-width: 400px) {
-   main {
-      padding-top: 90px;
-   }
-} */

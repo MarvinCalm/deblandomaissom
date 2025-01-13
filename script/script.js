@@ -309,62 +309,101 @@ window.addEventListener("wheel", (event) => {
 
 // BOTOES PREV NEXT CARROSSEL
 
-document.addEventListener("DOMContentLoaded", () => {
-    const carrosselInner = document.querySelector(".carrossel-inner");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
+const carrosselInner = document.querySelector('.carrossel-inner');
+const items = document.querySelectorAll('.carrossel-item');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let currentIndex = 0;
+const totalItems = items.length;
+const intervalTime = 5000;
 
-    let currentIndex = 0;
-    let itemsToShow = getItemsToShow();
-    let itemWidth = 100 / itemsToShow;
+function updateCarrossel() {
+   carrosselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-    function getItemsToShow() {
-        if (window.innerWidth <= 480) {
-            return 1; // 1 item visível em telas pequenas
-        } else if (window.innerWidth <= 768) {
-            return 2; // 2 itens visíveis em tablets
-        } else {
-            return 5; // 5 itens visíveis em desktops
-        }
-    }
+function showNext() {
+   currentIndex = (currentIndex + 1) % totalItems;
+   updateCarrossel();
+}
 
-    function updateCarrossel() {
-        itemsToShow = getItemsToShow(); // Atualiza o número de itens visíveis com base no tamanho da tela
-        itemWidth = 100 / itemsToShow;
-        const offset = -(currentIndex * itemWidth);
-        carrosselInner.style.transform = `translateX(${offset}%)`;
-    }
+function showPrev() {
+   currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+   updateCarrossel();
+}
 
-    function showPrev() {
-        currentIndex = Math.max(currentIndex - 1, 0);
-        updateCarrossel();
-        resetAutoSlide();
-    }
-
-    function showNext() {
-        currentIndex = Math.min(currentIndex + 1, carrosselInner.children.length - itemsToShow);
-        updateCarrossel();
-        resetAutoSlide();
-    }
-
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % (carrosselInner.children.length - itemsToShow + 1);
-            updateCarrossel();
-        }, 5000);
-    }
-
-    function resetAutoSlide() {
-        clearInterval(autoSlideInterval);
-        startAutoSlide();
-    }
-
-    // Recalcula o layout ao redimensionar a janela
-    window.addEventListener("resize", updateCarrossel);
-
-    prevButton.addEventListener("click", showPrev);
-    nextButton.addEventListener("click", showNext);
-
-    updateCarrossel();
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
     startAutoSlide();
-});
+}
+
+
+nextButton.addEventListener('click', showNext);
+prevButton.addEventListener('click', showPrev);
+
+let autoSlide = setInterval(showNext, intervalTime);
+
+// Parar o auto-slide ao interagir
+document.querySelector('.carrossel').addEventListener('mouseenter', () => clearInterval(autoSlide));
+document.querySelector('.carrossel').addEventListener('mouseleave', () => autoSlide = setInterval(showNext, intervalTime));
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const carrosselInner = document.querySelector(".carrossel-inner");
+//     const prevButton = document.querySelector(".prev");
+//     const nextButton = document.querySelector(".next");
+
+//     let currentIndex = 0;
+//     let itemsToShow = getItemsToShow();
+//     let itemWidth = 100 / itemsToShow;
+
+//     function getItemsToShow() {
+//         if (window.innerWidth <= 480) {
+//             return 2; // 1 item visível em telas pequenas
+//         } else if (window.innerWidth <= 768) {
+//             return 2; // 2 itens visíveis em tablets
+//         } else {
+//             return 5; // 5 itens visíveis em desktops
+//         }
+//     }
+
+//     function updateCarrossel() {
+//         itemsToShow = getItemsToShow(); // Atualiza o número de itens visíveis com base no tamanho da tela
+//         itemWidth = 100 / itemsToShow;
+//         const offset = -(currentIndex * itemWidth);
+//         carrosselInner.style.transform = `translateX(${offset}%)`;
+//     }
+
+//     function showPrev() {
+//         currentIndex = Math.max(currentIndex - 1, 0);
+//         updateCarrossel();
+//         resetAutoSlide();
+//     }
+
+//     function showNext() {
+//         currentIndex = Math.min(currentIndex + 1, carrosselInner.children.length - itemsToShow);
+//         updateCarrossel();
+//         resetAutoSlide();
+//     }
+
+//     function startAutoSlide() {
+//         autoSlideInterval = setInterval(() => {
+//             currentIndex = (currentIndex + 1) % (carrosselInner.children.length - itemsToShow + 1);
+//             updateCarrossel();
+//         }, 2000);
+//     }
+
+//     function resetAutoSlide() {
+//         clearInterval(autoSlideInterval);
+//         startAutoSlide();
+//     }
+
+//     // Recalcula o layout ao redimensionar a janela
+//     window.addEventListener("resize", updateCarrossel);
+
+//     prevButton.addEventListener("click", showPrev);
+//     nextButton.addEventListener("click", showNext);
+
+//     updateCarrossel();
+//     startAutoSlide();
+// });
