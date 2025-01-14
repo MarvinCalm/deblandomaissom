@@ -112,15 +112,73 @@
     background-color: #0056b3;
 }
 
-
-
-@media (max-width: 450px) {
+@media (max-width: 359px) {
     #contact {
         height: 100vh;      
         margin: 0 10px;      
     }
     .contacts-links {
         gap: 6px;
+        margin: 8px 0;
+    }
+    .phone, .whatsapp, .instagram {
+        font-size: .6rem;
+    }
+    .address {
+        font-size: .5rem;
+    }
+    .form-and-address {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        gap: 10px;        
+    }
+    .localization {
+        height: 155px;
+        width: 100%;
+        margin: 2px 5px;
+    }
+    .form-container {
+        width: 100%;
+        padding: 2px 8px;
+    }    
+    
+    .form-container h1 {
+        font-size: .8rem;
+        margin-bottom: 3px;
+    }
+    .form-container label {
+        font-size: .6rem;
+    }
+      
+    .form-input, 
+    .form-textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 10px;
+        padding: 3px 3px;
+    }
+    .form-textarea {
+        height: 55px;
+    }
+    .form-button {
+        font-size: 12px;
+        padding: 3px;
+    }
+    .form-group {
+        margin-bottom: 4px;
+    }   
+}
+
+
+@media (min-width: 360px) and (max-width: 780px) {
+    #contact {
+        height: 100vh;      
+        margin: 0 10px;      
+    }
+    .contacts-links {
+        gap: 15px;
         margin: 8px 0;
     }
     .phone, .whatsapp, .instagram {
@@ -147,19 +205,19 @@
     }    
     
     .form-container h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 3px;
     }
     .form-container label {
-        font-size: .6rem;
+        font-size: .7rem;
     }
       
     .form-input, 
     .form-textarea {
         border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 10px;
-        padding: 3px 3px;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 4px 3px;
     }
     .form-textarea {
         height: 55px;
@@ -173,27 +231,94 @@
     }   
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 781px) and (max-width: 1180px) {
     #contact {
-       height: 100vh;      
-       margin: 0 40px;
+       height: 80vh;      
+       margin: 0 20px;
     }
     .contacts-links {
-        gap: 12px;
+        gap: 15px;
         margin: 15px 0;
     }
     .phone, .whatsapp, .instagram {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .form-and-address {        
         gap: 0;        
+    }
+    .form-container h1 {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }
+    .form-container label {
+        font-size: .8rem;
     }
     .form-input, 
     .form-textarea {
         border: 1px solid #ccc;
         border-radius: 5px;
+        font-size: 14px;
+        padding: 3px 3px;
+    }
+    .form-textarea {
+        height: 75px;
+    }
+    .form-button {
         font-size: 13px;
-        padding: 3px 5px;
+        padding: 3px;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    } 
+    .localization {
+        height: 400px;
+        width: 100%;
+        margin: 2px 5px;
     }
     
+}
+@media (min-width: 1181px) and (max-width: 1680px) {
+    #contact {
+        height: 85vh;      
+        margin: 0 20px;
+     }
+     .contacts-links {
+        gap: 19px;
+        margin: 15px 5px;
+     }
+     .phone, .whatsapp, .instagram {
+         font-size: 1.8rem;
+     }
+     .form-and-address {        
+         gap: 0;        
+     }
+     .form-container h1 {
+         font-size: 1.2rem;
+         margin-bottom: 3px;
+     }
+     .form-container label {
+         font-size: .8rem;
+     }
+     .form-input, 
+     .form-textarea {
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         font-size: 14px;
+         padding: 5px 4px;
+     }
+     .form-textarea {
+         height: 75px;
+     }
+     .form-button {
+         font-size: 15px;
+         padding: 3px;
+     }
+     .form-group {
+         margin-bottom: 10px;
+     } 
+     .localization {
+         height: 400px;
+         width: 100%;
+         margin: 2px 2px;
+     }  
 }

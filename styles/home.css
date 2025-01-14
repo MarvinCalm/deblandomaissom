@@ -204,10 +204,72 @@
    cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 359px) {
    #home {
       height: 100vh;      
-      margin: 0 25px;
+      margin: 0 15px;
+   }
+   .carousel-banner-control {
+      display: none;
+   }
+   .banner-brands {
+      display: none;
+   }
+   .banner-brands-mobile {
+      display: block;      
+   }
+   .banner-mobile-media {
+      display: block;
+   }
+   .carrossel {
+      align-items: center;
+      padding: 2px;
+   }
+   .carrossel-item {
+      min-width: 100%;      
+      box-sizing: border-box;
+      padding: 3px;
+   }
+   .carrossel-inner {
+      width: 30%;
+   }
+
+   .carousel-banner-item {
+      width: 100%;
+   }
+   .modal img {
+      max-width: 75%;
+      max-height: 75%;
+      border-radius: 5px;
+   }
+
+   #whatsapp-button {
+      position: fixed;
+      bottom: 75px;
+      right: 10px;
+      z-index: 1002;
+      width: 55px;
+      height: 55px;
+      
+   }
+   #whatsapp-button a img {
+      width: 80%;
+      height: 80%;
+   }
+   .close {
+      top: 0;
+      right: 30px;
+      font-size: 95px;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+   }
+}
+
+
+@media (min-width: 360px) and (max-width: 780px) {
+   #home {
+      height: 100vh;      
+      margin: 0 20px;
    }
    .carousel-banner-control {
       display: none;
@@ -227,10 +289,15 @@
    .carrossel-item {
       min-width: 100%;      
       box-sizing: border-box;
-      padding: 5px;
+      padding: 2px;
    }
    .carrossel-inner {
-      width: 40%;
+      width: 30%;
+   }
+   .modal img {
+      max-width: 85%;
+      max-height: 85%;
+      border-radius: 5px;
    }
 
    .carousel-banner-item {
@@ -239,7 +306,7 @@
 
    #whatsapp-button {
       position: fixed;
-      bottom: 40px;
+      bottom: 75px;
       right: 20px;
       z-index: 1002;
       width: 60px;
@@ -251,9 +318,9 @@
       height: 80%;
    }
    .close {
-      top: 0;
+      top: 30px;
       right: 30px;
-      font-size: 95px;
+      font-size: 100px;
       color: rgb(255, 255, 255);
       cursor: pointer;
    }
@@ -262,7 +329,7 @@
    
 }
 
-@media (min-width: 481px) and (max-width: 1520px) {
+@media (min-width: 781px) and (max-width: 1180px) {
    #home {
       height: 100vh;      
       margin: 0 20px;
@@ -275,6 +342,13 @@
    }
    .carrossel-inner {
       width: 30%;
+   }
+}
+
+@media (min-width: 1181px) and (max-width: 1680px) {
+   #home {
+      height: 100vh;      
+      margin: 0 140px;
    }
 }
 

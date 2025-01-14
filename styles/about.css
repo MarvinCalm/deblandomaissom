@@ -24,17 +24,41 @@
 .store-img img {
     width: 420px;
 }
+.about-text p {
+    text-indent: 10px;      
+}
 
-
-
-@media (max-width: 450px) {
+@media (max-width: 359px) {
     #about {
         height: 100vh;      
-        margin: 40px 10px;      
+        margin: 0 10px;      
+    }
+    .about-text {
+        font-size: .6rem;
+        margin: 5px 4px 0 4px;
+        padding: 0;
+    }
+    .about-text p {
+        margin: 0 0 2px 0;        
+    }
+
+    .banner-about img {
+        width: 100%;
+    }
+    .store-img img {
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 780px) {
+    #about {
+        height: 100vh;      
+        margin: 0 10px;      
     }
     
     .about-text {
-        font-size: 10px;
+        font-size: 12px;
         margin: 8px 4px 0 4px;
         padding: 0;
     }
@@ -46,21 +70,42 @@
         width: 100%;
     }
     .store-img img {
-        width: 75%;
+        width: 65%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1000px){
+@media (min-width: 781px) and (max-width: 1180px) {
     #about {
-       height: 100vh;      
-       margin: 0 40px;
+        height: 100vh;      
+        margin: 0 25px;      
     }
     .about-text {
         font-size: 18px;
-        margin: 5px 5px 0 5px;
+        margin: 5px 4px 0 4px;
         padding: 0;
     }
     .store-img img {
-        width: 50%;
+        width: 70%;
+    }
+    .about-text p {
+        margin-bottom: 8px;   
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1680px) {
+    #about {
+        height: 100vh;      
+        margin: 0 30px;
+    }
+    .about-text {
+        font-size: 17px;
+        margin: 5px 4px 0 4px;
+        padding: 0;
+    }
+    .store-img img {
+        width: 30%;
+    }
+    .about-text p {
+        margin-bottom: 8px;   
     }
 }

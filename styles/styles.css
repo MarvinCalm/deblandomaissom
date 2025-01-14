@@ -30,8 +30,17 @@ main {
    padding-top: 120px;
 }
 
+@media (max-width: 359px) {
+   html {
+      scroll-padding-top: 85px;
+   }
+   main {
+      padding-top: 85px;
+   }
+}
 
-@media (max-width: 450px) {
+
+@media (min-width: 360px) and (max-width: 780px) {
    html {
       scroll-padding-top: 100px;
    }

@@ -59,11 +59,29 @@
     opacity: 1;
 }
 
-
-@media (max-width: 450px) {
+@media (max-width: 359px) {
     #services {
-        height: 95vh;      
-        margin: 40px 20px;
+        height: 100vh;      
+        margin: 0 15px;
+        display: flex;      
+    }
+    .catalogo {
+        margin-top: 40px;
+        gap: 10px;
+        max-width: 1000px;
+        padding: 0;
+    }
+    .overlay {
+        font-size: .5rem;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 780px) {
+    #services {
+        height: 100vh;      
+        margin: 0 15px;
         display: flex;      
     }
     .catalogo {
@@ -81,10 +99,10 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 781px) and (max-width: 1180px) {
     #services {
        height: 100vh;      
-       margin: 0 40px;
+       margin: 0 20px;
     }
     
 }
