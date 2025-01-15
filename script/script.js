@@ -216,11 +216,7 @@ ScrollReveal().reveal('.contacts-links', {
     delay: 1000,         // Atraso antes de começar a animação
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
-ScrollReveal().reveal('#footer', {
-    duration: 1000,     // Duração da animação em milissegundos
-    delay: 500,         // Atraso antes de começar a animação
-    reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
-});
+
 
 
 
@@ -255,29 +251,50 @@ document.getElementById("budget-form").addEventListener("submit", function (even
 });
 
 
-// BOTÃO MENU
+// BOTÃO MENU MOBILE
+
+document.addEventListener("DOMContentLoaded", function() {
+    const buttonBar = document.getElementById('button__bar');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+
+
+    buttonBar.addEventListener('click', () => {
+      buttonBar.classList.toggle('active');
+      mobileMenu.classList.toggle('visible');
+    });
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        buttonBar.classList.remove('active');
+        mobileMenu.classList.remove('visible');
+      });
+    });
+});
 
 // Seleciona o botão e o menu móvel
-const buttonBar = document.getElementById('button__bar');
-const mobileMenu = document.querySelector('.mobile-menu');
+// const buttonBar = document.getElementById('button__bar');
+// const mobileMenu = document.querySelector('.mobile-menu');
 
-// Adiciona um evento de clique no botão
-buttonBar.addEventListener('click', () => {
-  // Alterna a classe 'active' no botão
-  buttonBar.classList.toggle('active');
+// // Adiciona um evento de clique no botão
+// buttonBar.addEventListener('click', () => {
+//   // Alterna a classe 'active' no botão
+//   buttonBar.classList.toggle('active');
   
-  // Alterna a visibilidade do menu móvel
-  mobileMenu.classList.toggle('visible');
-});
+//   // Alterna a visibilidade do menu móvel
+//   mobileMenu.classList.toggle('visible');
+// });
 
-// Fecha o menu ao clicar em um item do menu
-const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    buttonBar.classList.remove('active');
-    mobileMenu.classList.remove('visible');
-  });
-});
+// // Fecha o menu ao clicar em um item do menu
+// const navLinks = document.querySelectorAll('.nav-link');
+// navLinks.forEach(link => {
+//   link.addEventListener('click', () => {
+//     buttonBar.classList.remove('active');
+//     mobileMenu.classList.remove('visible');
+//   });
+// });
+// BOTÃO MENU FINAL
 
 
 
