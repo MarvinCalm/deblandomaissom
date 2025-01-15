@@ -23,6 +23,34 @@ ScrollReveal().reveal('.banner-som-auto', {
     delay: 300,         // Atraso antes de começar a animação
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
+ScrollReveal().reveal('.banner-cmedia', {
+  origin: 'top',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.banner-eletrica', {
+  origin: 'top',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.banner-envelopamento', {
+  origin: 'top',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.banner-assistencia', {
+  origin: 'top',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
 ScrollReveal().reveal('.text-som-auto', {
     origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
     distance: '100px',   // Distância percorrida pelo elemento
@@ -30,12 +58,68 @@ ScrollReveal().reveal('.text-som-auto', {
     delay: 300,         // Atraso antes de começar a animação
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
+ScrollReveal().reveal('.text-cmedia', {
+  origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.text-eletrica', {
+  origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.text-envelopamento', {
+  origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.text-assistencia', {
+  origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
 ScrollReveal().reveal('.img-som-auto', {
     origin: 'left',   // De onde a animação começa (bottom, top, left, right)
     distance: '100px',   // Distância percorrida pelo elemento
     duration: 2500,     // Duração da animação em milissegundos
     delay: 300,         // Atraso antes de começar a animação
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.img-cmedia', {
+  origin: 'left',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.img-eletrica', {
+  origin: 'left',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.img-envelopamento', {
+  origin: 'left',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.img-assistencia', {
+  origin: 'left',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
 
 
