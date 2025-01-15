@@ -1,5 +1,4 @@
-
-
+// MODAL ABRIR IMAGEM CARROSSEL INÍCIO 🟢
 
 // Função para abrir o modal
 function openModal(imageSrc) {
@@ -19,7 +18,7 @@ function closeModal() {
 function startAutoScroll() {
    scrollCarrossel(scrollDirection); // Chama a função de rolar na direção especificada
 }
-
+// MODAL ABRIR IMAGEM CARROSSEL FINAL 🔴
 
 
 

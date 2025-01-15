@@ -1,12 +1,13 @@
 
-
-
-// BOTÃO WPP
+// BOTÃO WPP INÍCIO 🟢
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Botão de WhatsApp carregado!");
 });
+// BOTÃO WPP FINAL 🔴
 
-// ANIMAÇÃO SCROLL REVEAL
+
+
+// ANIMAÇÃO SCROLL REVEAL INÍCIO 🟢
 ScrollReveal().reveal('#header', {
     origin: 'top',   // De onde a animação começa (bottom, top, left, right)
     distance: '50px',   // Distância percorrida pelo elemento
@@ -14,8 +15,6 @@ ScrollReveal().reveal('#header', {
     delay: 400,         // Atraso antes de começar a animação
     reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
-
-
 ScrollReveal().reveal('.banner-som-auto', {
     origin: 'top',   // De onde a animação começa (bottom, top, left, right)
     distance: '100px',   // Distância percorrida pelo elemento
@@ -31,6 +30,13 @@ ScrollReveal().reveal('.banner-cmedia', {
   reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
 ScrollReveal().reveal('.banner-eletrica', {
+  origin: 'top',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+ScrollReveal().reveal('.banner-pelicula', {
   origin: 'top',   // De onde a animação começa (bottom, top, left, right)
   distance: '100px',   // Distância percorrida pelo elemento
   duration: 2500,     // Duração da animação em milissegundos
@@ -72,6 +78,14 @@ ScrollReveal().reveal('.text-eletrica', {
   delay: 300,         // Atraso antes de começar a animação
   reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
+ScrollReveal().reveal('.text-pelicula', {
+  origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
+
 ScrollReveal().reveal('.text-envelopamento', {
   origin: 'bottom',   // De onde a animação começa (bottom, top, left, right)
   distance: '100px',   // Distância percorrida pelo elemento
@@ -107,6 +121,13 @@ ScrollReveal().reveal('.img-eletrica', {
   delay: 300,         // Atraso antes de começar a animação
   reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
+ScrollReveal().reveal('.img-pelicula', {
+  origin: 'left',   // De onde a animação começa (bottom, top, left, right)
+  distance: '100px',   // Distância percorrida pelo elemento
+  duration: 2500,     // Duração da animação em milissegundos
+  delay: 300,         // Atraso antes de começar a animação
+  reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
+});
 ScrollReveal().reveal('.img-envelopamento', {
   origin: 'left',   // De onde a animação começa (bottom, top, left, right)
   distance: '100px',   // Distância percorrida pelo elemento
@@ -122,9 +143,10 @@ ScrollReveal().reveal('.img-assistencia', {
   reset: true         // Se a animação deve ser executada novamente ao rolar para fora e voltar
 });
 
+// ANIMAÇÃO SCROLL REVEAL FINAL 🔴
 
 
-// BOTÃO MENU MOBILE
+// BOTÃO MENU MOBILE INÍCIO 🟢
 
 // Seleciona o botão e o menu móvel
 const buttonBar = document.getElementById('button__bar');
@@ -147,4 +169,4 @@ navLinks.forEach(link => {
     mobileMenu.classList.remove('visible');
   });
 });
-// BOTÃO MENU FINAL
+// BOTÃO MENU FINAL 🔴
