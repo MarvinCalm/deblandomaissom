@@ -98,15 +98,61 @@
 #button__bar.active span:nth-child(3) {
    transform: rotate(45deg) translate(-9px, -3px);
 }
-/* BUTTONS FIM*/
+/* BUTTONS FINAL 🔴*/
 
-/* BARRA PRINCIPAL NAVEGAÇÃO */
+/* NAV SERVICES ITEMS INÍCIO 🟢*/
+.nav-list .nav-item {
+   position: relative;
+   display: inline-block;
+}
+
+.nav-list .nav-link {
+   display: block;
+   padding: 10px;
+   color: white;
+   text-decoration: none;
+}
+
+.nav-list .sub-menu {
+   display: none; /* Submenu oculto inicialmente */
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background: #10158b;
+   min-width: 200px;
+   list-style-type: none;
+   padding: 10px;
+   margin: 0;
+   border-radius: 5px;
+}
+.nav-list .nav-item:hover .sub-menu {
+   display: block; /* Exibe o submenu quando o item de navegação é "hovered" */
+}
+ 
+.nav-list .sub-menu li {
+   display: block;
+}
+ 
+ .nav-list .sub-menu li a {
+   padding: 0;
+   /* background-color: #555; */
+   color: white;
+   text-decoration: none;
+   font-size: 13px;
+}
+ 
+ .nav-list .sub-menu li a:hover {
+   color: #ffed27;
+}
+/* NAV SERVICES ITEMS FINAL 🔴*/
+
+/* BARRA PRINCIPAL NAVEGAÇÃO INÍCIO 🟢*/
 .nav-bar {
    display: flex;
    justify-content: space-around;
    align-items: center;
    height: 75px;
-   
+   background-color: #01158e;
 }
 
 .nav-list ul {
